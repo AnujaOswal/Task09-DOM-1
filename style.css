@@ -1,0 +1,35 @@
+.banner {
+  background: linear-gradient(to left, #007bff, #9198e5);
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+textarea,
+input {
+  outline: none;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  th,
+  td {
+    padding: 0px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #table {
+    width: 100%;
+  }
+}
